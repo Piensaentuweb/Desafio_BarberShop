@@ -1,0 +1,30 @@
+.navbar{
+    background-color: $eserie-black;
+    padding: 1.5rem;
+    @include large-breakpoint{ // * Anidacion Query
+        padding: 1.5rem;
+    }
+
+    &__logo{
+    width: 75px;
+    }
+
+    ul{
+        margin-left: auto;
+    }
+
+    &--toggler{
+        border: none;
+    }
+
+}
+
+
+.navbar .navbar__list .navbar__link{
+    color: $white;
+    margin-right: 0.5rem;
+
+    &--active{ //*anididacion de modificador
+        color: $ruddy-pink;
+    }
+}

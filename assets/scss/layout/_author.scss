@@ -1,0 +1,9 @@
+.author{
+    padding: 3rem 0rem;
+}
+
+@media (max-width: $breakpoint-lg) {
+.author__links{
+text-align:center;
+}
+}

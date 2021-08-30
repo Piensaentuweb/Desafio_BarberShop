@@ -1,0 +1,35 @@
+.header{
+    background: url('/assets/images/post-image.jpg');
+    background-repeat: no-repeat;//*Para que no se repita la imagen
+    background-size: cover;//*Que cubra todo nuestro contenedor
+    background-position: center center;//*para centrar imagen
+    min-height: 70vh;//Ocupa el alto completa de todas las pantallas
+
+    @include center-element-flex;
+        flex-direction: column;
+
+        @include large-breakpoint{
+            min-height: 90vh;
+        }
+
+    h1{
+        color: $white;
+        font-size: $xx-large;
+        font-weight:$font-bold;
+        font-style: italic;
+        width: 60%;
+        text-align: center;
+        margin: 0rem 0rem 9rem 0rem;
+
+        @include large-breakpoint{
+            width: 80%;
+            font-size: $x-large;
+        }
+    }
+
+    &__icons{
+        color: $white;
+        font-size: $x-large;
+        }
+    
+}
